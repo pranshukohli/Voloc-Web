@@ -1,16 +1,15 @@
 @import url("featured_slide.css");
 html {
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 body {
-	font-family: 'Open-Sans', sans-serif;
+    font-family: 'Open-Sans', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 13px;
     color: #666666;
     transition: 2.0s;
-    
 }
 
 a:hover {
@@ -48,10 +47,10 @@ a:hover {
 .backImg {
     background-attachment: fixed;
     background-image: url("images/overlay.png"), url("images/books.jpg");
+    height: 100vh;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 100px;
 }
 
 .justify {
@@ -195,6 +194,7 @@ div.wrapper h6 {
 }
 
 #header h1 a {
+    text-decoration: none;
     font-size: 46px;
     color: #CCCCCC;
 }
@@ -210,7 +210,7 @@ div.wrapper h6 {
     /* Stay on top */
     top: 0;
     left: 0;
-    background-color:#3B0254;
+    background-color: #3B0254;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -219,63 +219,73 @@ div.wrapper h6 {
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
 }
+
+
 /* Some styles for the meet the team iframe */
 
-.changeframes{
+.changeframes {
     position: fixed;
     height: 100%;
     width: 100%;
     display: none;
     right: 0;
-    bottom:0;
+    bottom: 0;
     z-index: -999;
-    left: 0; 
+    left: 0;
     border: none;
 }
 
-iframe{
+iframe {
     margin-left: 250px;
     overflow: visible;
 }
 
-/* The navigation menu links */
 
+/* The navigation menu links */
 
 #slider {
     padding-top: 65px;
 }
 
-
 .sidenav a {
     text-decoration: none;
-    border-style:solid;
-    border-width:1px 0px 1px 0px;
-    padding:15px;
-    font-size:25px;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    padding: 15px;
+    font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
 }
 
-.closebtn
-{
-position:absolute;
-color:#FFFFFF;
-font-size:40px;
-right:20px;
-top:0px;
-cursor:pointer;
+.closebtn {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 40px;
+    right: 20px;
+    top: 0px;
+    cursor: pointer;
 }
+
+
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover,
 .offcanvas a:focus {
-	text-decoration:none;
+    text-decoration: none;
     color: #f1f1f1;
-	border-width:1px 1px 1px 1px;
+    border-width: 1px 1px 1px 1px;
 }
 
+
 /*Footer*/
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 
 .footer,
 .push {
