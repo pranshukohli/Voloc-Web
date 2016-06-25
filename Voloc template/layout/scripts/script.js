@@ -1,7 +1,5 @@
 $(document).ready(function() {
-            
-			$(".navbar_div").load("navbar.html");
-			
+            			
 			$('.category').hover(
 
                 function() {
