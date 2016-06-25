@@ -1,21 +1,19 @@
 /*---------------------New Styles for courses page-------------------*/
-#mySidenav a.selected{
-	background-color	: #000080;
-}
+
 .mid-page{
-	padding-top			: 50px;
 	height				: 100%;
 	width				: 65%;
     position			: fixed;
 }
-#course-mid-page ul,li{
-	list-style			: none;
-}
 
+
+table{
+	padding				: 0px 0px 0px 0px;
+}
 
 .courses-img{
 	dispay				: block;
-	height				: 75%;
+	height				: 100%;
 	width				: 100%;
 	max-width			: 300px; 
  	max-height			: 100px;
@@ -27,16 +25,18 @@
 	dispay				: block;
 	margin				: auto;
 	height				: 25%;
-	width				: 40%;/* change this for size of course's block*/
+	width				: 55%;/* change this for size of course's block*/
 	border-radius		: 2px;
  	overflow			: hidden; 
- 	background-color	: #3B0254;
+	background-color	: #3B0254;
 	margin-top			: 20px;
 	transition			: 0.3s;
 	box-shadow			: 0px 2px 5px #888888;
+	
 }
 .courses:hover{
 	box-shadow			: 10px 12px 10px #888888;
+	
 }
 
 img.decor {
@@ -44,20 +44,22 @@ img.decor {
 }
 
 .sub-title{
-	dispay				: block;
+	z-index				: 3;
+	display				: block;
 	height				: 15%;
 	width				: 100%;
-	box-shadow			: 0px -5px 10px #c0c0c0;
 	
 }
 .sub-title a{	
 	padding				: 5px 10px 10px 20px;
     text-decoration		: none;
-    font-size			: 110%;
+    font-size			: 120%;
     color				: #818181;
     display				: block;
     transition			: 0.3s;
     text-align			: center;
+    font-family			: 'Open-Sans', sans-serif;
+	font-width			: bold;
 }
 
 
